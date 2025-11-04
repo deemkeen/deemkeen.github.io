@@ -1,0 +1,32 @@
+# Site settings
+title: deemlog
+email: dimgur@gmail.com
+description: >-
+  How to automate and solve your problems, so you can have new ones
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://deemkeen.github.io" # your site URL
+
+# Build settings
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+# Author information
+author:
+  name: deemkeen
+  email: dimgur@gmail.com
+
+# Permalink structure
+permalink: /:year/:month/:day/:title/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
