@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: page
 title: Categories
 permalink: /categories/
 ---
-
-# All Categories
 
 {% assign categories = site.categories | sort %}
 {% for category in categories %}
@@ -13,7 +11,6 @@ permalink: /categories/
     {% for post in category[1] %}
       <li>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
       </li>
     {% endfor %}
   </ul>
