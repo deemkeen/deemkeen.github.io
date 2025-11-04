@@ -16,7 +16,7 @@ layout: default
       {% endif %}
       {% if page.categories.size > 0 %}
         • {% for category in page.categories %}
-          <span class="category">{{ category }}</span>{% unless forloop.last %}, {% endunless %}
+          <a href="/category/{{ category | slugify }}/" class="category">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
         {% endfor %}
       {% endif %}
     </p>
