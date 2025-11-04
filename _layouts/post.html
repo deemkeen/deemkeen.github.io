@@ -7,13 +7,6 @@ layout: default
     <h1>{{ page.title }}</h1>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-      {% if page.author.name %}
-        • <span>{{ page.author.name }}</span>
-      {% elsif page.author %}
-        • <span>{{ page.author }}</span>
-      {% elsif site.author.name %}
-        • <span>{{ site.author.name }}</span>
-      {% endif %}
       {% if page.categories.size > 0 %}
         • {% for category in page.categories %}
           <a href="/category/{{ category | slugify }}/" class="category">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
