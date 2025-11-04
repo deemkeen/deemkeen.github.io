@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linux
+title: linux
 permalink: /category/linux/
 ---
 

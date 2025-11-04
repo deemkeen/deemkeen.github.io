@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Popos
+title: popos
 permalink: /category/popos/
 ---
 

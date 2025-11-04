@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Nerdstuff
+title: nerdstuff
 permalink: /category/nerdstuff/
 ---
 
