@@ -20,9 +20,10 @@
 
 /* Two-column layout with header on left, content on right */
 .wrapper {
-  width: auto;
+  width: 100%;
   max-width: 960px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Only fix the main sidebar header, not post headers */
@@ -31,6 +32,33 @@ body > .wrapper > header {
   width: 270px !important;
   float: left !important;
   padding: 20px;
+  top: 0;
+  left: 50%;
+  margin-left: -480px;
+}
+
+section {
+  width: 650px !important;
+  float: right !important;
+  padding-bottom: 50px;
+  margin-left: 290px;
+}
+
+/* Only fix the main footer, not any other footers */
+body > .wrapper > footer {
+  position: fixed !important;
+  width: 270px !important;
+  float: left !important;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -480px;
+}
+
+/* Only fix the main sidebar header, not post headers */
+body > .wrapper > header {
+  position: fixed !important;
+  width: 270px !important;
+  float: left !important;
 }
 
 section {
@@ -61,13 +89,41 @@ section header {
 
 @media print, screen and (max-width: 960px) {
   div.wrapper {
-    width: auto;
+    width: 100%;
     margin: 0;
+    padding: 0 20px;
   }
 
-  header, section, footer {
-    float: none;
-    position: static;
-    width: auto;
+  body > .wrapper > header {
+    position: static !important;
+    width: 100% !important;
+    float: none !important;
+    padding: 20px 0;
+    margin: 0 !important;
+    left: auto !important;
+  }
+
+  section {
+    width: 100% !important;
+    float: none !important;
+    margin: 0 !important;
+    padding-bottom: 50px;
+  }
+
+  body > .wrapper > footer {
+    position: static !important;
+    width: 100% !important;
+    float: none !important;
+    margin: 0 !important;
+    left: auto !important;
+    bottom: auto !important;
+  }
+
+  .profile-picture {
+    text-align: center;
+  }
+
+  .profile-picture img {
+    margin: 0 auto;
   }
 }
