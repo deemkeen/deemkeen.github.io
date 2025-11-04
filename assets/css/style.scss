@@ -79,6 +79,56 @@ section header {
   padding: 0 !important;
 }
 
+/* Code block copy button styling */
+.code-block-wrapper {
+  position: relative;
+  margin: 1em 0;
+}
+
+.code-block-wrapper pre {
+  margin: 0;
+}
+
+.copy-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 6px 8px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #d1d5da;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s, background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.code-block-wrapper:hover .copy-button {
+  opacity: 1;
+}
+
+.copy-button:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.copy-button:active {
+  background: #e5e7eb;
+}
+
+.copy-button.copied {
+  background: #10b981;
+  border-color: #059669;
+  color: white;
+}
+
+.copy-button svg {
+  display: block;
+}
+
+
 @media print, screen and (max-width: 960px) {
   div.wrapper {
     width: 100%;
