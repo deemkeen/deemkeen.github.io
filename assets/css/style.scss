@@ -21,6 +21,7 @@ section {
   width: 650px !important;
   float: right !important;
   padding-bottom: 50px;
+  position: relative !important;
 }
 
 footer {
@@ -28,6 +29,16 @@ footer {
   width: 270px !important;
   float: left !important;
   bottom: 20px;
+}
+
+/* Ensure navigation and content elements don't inherit fixed positioning */
+section * {
+  position: static;
+}
+
+section h1, section h2, section h3, section h4, section h5, section h6,
+section p, section ul, section ol, section pre, section blockquote {
+  position: static !important;
 }
 
 @media print, screen and (max-width: 960px) {
