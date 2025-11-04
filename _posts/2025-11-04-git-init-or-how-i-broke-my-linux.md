@@ -2,7 +2,10 @@
 layout: post
 title: "I Broke My Pop!_OS Boot, Then Fixed It by Deleting One File (With a Little CSI: Linux)"
 date: 2025-11-04 00:00:00 +0000
-categories: linux, popos, nerdstuff
+categories:
+  - linux
+  - popos
+  - nerdstuff
 ---
 
 **TL;DR:** I ran `fwupdmgr update --offline` because the normal update couldn’t find a file. My machine fell into an infinite “Upgrade complete. Autoremoving old packages…” → reboot loop. I spelunked through TTYs, LUKS, **LVM**, chroot, `dpkg --configure -a`, `update-initramfs`, `bootctl`, and a `/dev/pts` heckle. The real culprit? A leftover **systemd offline-update marker**: `/system-update`. Deleting it ended the loop.
