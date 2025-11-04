@@ -10,7 +10,8 @@
   margin: 0 auto;
 }
 
-header {
+/* Only fix the main sidebar header, not post headers */
+body > .wrapper > header {
   position: fixed !important;
   width: 270px !important;
   float: left !important;
@@ -21,23 +22,18 @@ section {
   width: 650px !important;
   float: right !important;
   padding-bottom: 50px;
-  position: relative !important;
 }
 
-footer {
+/* Only fix the main footer, not any other footers */
+body > .wrapper > footer {
   position: fixed !important;
   width: 270px !important;
   float: left !important;
   bottom: 20px;
 }
 
-/* Ensure navigation and content elements don't inherit fixed positioning */
-section * {
-  position: static;
-}
-
-section h1, section h2, section h3, section h4, section h5, section h6,
-section p, section ul, section ol, section pre, section blockquote {
+/* Ensure post headers are NOT fixed */
+.post-header {
   position: static !important;
 }
 
