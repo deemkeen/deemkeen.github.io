@@ -3,6 +3,11 @@
 
 @import "{{ site.theme }}";
 
+/* Prevent layout shift when scrollbar appears/disappears */
+html {
+  overflow-y: scroll;
+}
+
 /* Profile picture styling */
 .profile-picture {
   text-align: left;
@@ -52,27 +57,6 @@ body > .wrapper > footer {
   bottom: 20px;
   left: 50%;
   margin-left: -480px;
-}
-
-/* Only fix the main sidebar header, not post headers */
-body > .wrapper > header {
-  position: fixed !important;
-  width: 270px !important;
-  float: left !important;
-}
-
-section {
-  width: 650px !important;
-  float: right !important;
-  padding-bottom: 50px;
-}
-
-/* Only fix the main footer, not any other footers */
-body > .wrapper > footer {
-  position: fixed !important;
-  width: 270px !important;
-  float: left !important;
-  bottom: 20px;
 }
 
 /* Ensure post/page headers inside articles are NOT fixed */
@@ -127,3 +111,4 @@ section header {
     margin: 0 auto;
   }
 }
+
