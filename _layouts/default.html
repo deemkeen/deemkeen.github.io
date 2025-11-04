@@ -23,11 +23,9 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        <div class="about-section">
-          <h3>About</h3>
-          <p>Hi, I'm deemkeen.</p>
-          <p>This is my personal blog where I write..no no, not me, the LLM mostly does, we are living in the future, right? So yeah, <em>we write</em> about automation, problem-solving, and the inevitable new problems that arise from solving the old ones.</p>
-        </div>
+        {% if site.github.is_project_page %}
+        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+        {% endif %}
 
         {% if site.github.is_user_page %}
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
