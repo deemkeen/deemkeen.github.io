@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 
-/* Override fixed positioning to allow scrolling */
+/* Two-column layout with header on left, content on right */
 .wrapper {
   width: auto;
   max-width: 960px;
@@ -11,22 +11,23 @@
 }
 
 header {
-  position: static !important;
-  width: auto !important;
-  float: none !important;
-  padding: 20px 0;
+  position: fixed !important;
+  width: 270px !important;
+  float: left !important;
+  padding: 20px;
 }
 
 section {
-  width: auto !important;
-  float: none !important;
+  width: 650px !important;
+  float: right !important;
   padding-bottom: 50px;
 }
 
 footer {
-  position: static !important;
-  width: auto !important;
-  float: none !important;
+  position: fixed !important;
+  width: 270px !important;
+  float: left !important;
+  bottom: 20px;
 }
 
 @media print, screen and (max-width: 960px) {
