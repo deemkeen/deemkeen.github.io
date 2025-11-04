@@ -28,6 +28,7 @@ body > .wrapper > header h1 {
   max-width: 150px;
   margin: 0 auto;
   margin-bottom: 20px;
+  display: inline-block;
 }
 
 /* Two-column layout with header on left, content on right */
@@ -110,12 +111,5 @@ section header {
     bottom: auto !important;
   }
 
-  .profile-picture {
-    text-align: center;
-  }
-
-  .profile-picture img {
-    margin: 0 auto;
-  }
 }
 
