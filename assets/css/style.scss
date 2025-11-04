@@ -23,6 +23,11 @@ html {
   margin: 0;
 }
 
+/* Center the title under the profile picture */
+body > .wrapper > header h1 {
+  text-align: center;
+}
+
 /* Two-column layout with header on left, content on right */
 .wrapper {
   width: 100%;
