@@ -18,7 +18,7 @@ I built the whole TUI with Charm's bubbletea and lipgloss libraries, which made 
 
 The federation part was... interesting. ActivityPub isn't exactly simple, and getting HTTP signatures right took longer than I'd like to admit. But now you can follow people on Mastodon, they can follow you back, and posts show up where they should. There's also RSS feeds for each user because RSS should never die, and a web interface for people who insist on using browsers (I know, I know, not everyone lives in their terminal).
 
-Right now you can run it single-user or multi-user, there's Docker images if you want easy deployment, and it stores everything in SQLite with WAL mode. The code is Go, it's MIT licensed, and it lives at github.com/deemkeen/stegodon
+Right now you can run it single-user or multi-user, there's Docker images if you want easy deployment, and it stores everything in SQLite with WAL mode. The code is Go, it's MIT licensed, and it lives at [github.com/deemkeen/stegodon](https://github.com/deemkeen/stegodon)
 
 Here's where I could use some help though. I know the codebase pretty well at this point, but I'm just one person and I'm sure there are rough edges I'm not seeing. If you're into terminal UIs, federation protocols, Go, or just weird side projects, I'd love to have more eyes on this. Maybe you'll find a bug I missed. Maybe you'll have ideas for features I haven't thought of. Maybe you just want to poke around the code and see how ActivityPub works in practice.
 
@@ -28,6 +28,6 @@ Some things I'm thinking about for the future: better federation error handling,
 
 If you want to try it out, the README has instructions. If you find bugs, open an issue. If you want to contribute, PRs are welcome. If you just want to tell me this is a terrible idea and I should have just used WordPress like a normal person, well, you're probably right but I built it anyway.
 
-The repo is here: github.com/deemkeen/stegodon
+The repo is here: [Stegodon](https://github.com/deemkeen/stegodon)
 
 I'm curious to see if anyone else finds this useful or interesting. Or if I'm just one of a few oddballs who wanted to SSH into a blogging platform. Either way, the code's out there now.
